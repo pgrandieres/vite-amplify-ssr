@@ -5,11 +5,11 @@ frontend:
       commands:
         - nvm use 20
         - corepack enable
-        - yarn cache clean
-        - yarn install
+        - npm run cache clean
+        - npm i
     build:
       commands:
-        - yarn build
+        - npm run build
   artifacts:
       baseDirectory: .amplify-hosting
       files:
