@@ -1,5 +1,5 @@
 {
-  "name": "vite-amplify",
+  "name": "vite-amplify-ssr",
   "private": true,
   "version": "1.0.0",
   "type": "module",
