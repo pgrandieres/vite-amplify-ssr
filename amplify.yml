@@ -5,7 +5,6 @@ frontend:
       commands:
         - nvm use 20
         - corepack enable
-        - npm run clean
         - npm i
     build:
       commands:
