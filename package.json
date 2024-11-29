@@ -11,13 +11,13 @@
     "url": "https://github.com/bebeal/vite-amplify/issues"
   },
   "scripts": {
-    "build": "yarn clean && yarn && yarn build:client && yarn build:server && yarn postbuild",
+    "build": "npm run clean && npm i && npm run build:client && npm run build:server && npm run postbuild",
     "build:client": "tsc && vite build",
     "build:server": "tsc -p tsconfig.node.json && vite build --ssr src/entry-server.tsx",
-    "clean": "rimraf dist node_modules yarn.lock .amplify-hosting",
+    "clean": "rimraf dist node_modules package-lock.json .amplify-hosting",
     "dev": "nodemon --watch server --exec tsx server",
     "format": "prettier --write src server.ts api",
-    "lint": "yarn eslint src server.ts api --report-unused-disable-directives --max-warnings 0",
+    "lint": "npm run eslint src server.ts api --report-unused-disable-directives --max-warnings 0",
     "postbuild": "chmod +x postbuild.sh && ./postbuild.sh",
     "serve": "node server/server.js",
     "type-check": "tsc --noEmit"
