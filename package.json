@@ -11,7 +11,7 @@
     "url": "https://github.com/bebeal/vite-amplify/issues"
   },
   "scripts": {
-    "build": "npm run clean && npm i && npm run build:client && npm run build:server && npm run postbuild",
+    "build": "npm i && npm run build:client && npm run build:server && npm run postbuild",
     "build:client": "tsc && vite build",
     "build:server": "tsc -p tsconfig.node.json && vite build --ssr src/entry-server.tsx",
     "clean": "rimraf dist node_modules package-lock.json .amplify-hosting",
